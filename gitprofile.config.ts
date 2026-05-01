@@ -58,7 +58,7 @@ const CONFIG = {
     mastodon: '',
     researchGate: '',
     facebook: '',
-    instagram: '',
+    instagram: 'MaxMorfiX',
     reddit: '',
     threads: '',
     youtube: 'MaxMorfiX', // example: 'pewdiepie'
@@ -68,7 +68,7 @@ const CONFIG = {
 //    medium: 'arifszn',
 //    dev: 'arifszn',
     stackoverflow: '', // example: '1/jeff-atwood'
-    discord: '',
+    discord: 'MaxMorfiX',
     telegram: 'MaxMorfiX',
 //    website: 'https://www.arifszn.com',
     phone: '',

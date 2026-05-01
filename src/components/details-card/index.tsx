@@ -150,7 +150,7 @@ const OrganizationItem: React.FC<{
  * @param {Object} github - The GitHub object.
  * @return {JSX.Element} The details card component.
  */
-const DetailsCard = ({ profile, loading, social, github }: Props) => {
+const DetailsCard = ({ profile, loading, social, }: Props) => {
   const renderSkeleton = () => {
     const array = [];
     for (let index = 0; index < 4; index++) {

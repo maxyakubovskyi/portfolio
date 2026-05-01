@@ -101,8 +101,15 @@ const GitProfile = ({ config }: { config: Config }) => {
 
       const response = await axios.get(
         `https://api.github.com/users/${sanitizedConfig.github.username}`,
+        // `https://api.github.com/users/spumapumapumapumatey`,
       );
       const data = response.data;
+      
+      data.avatar_url = 'https://avatars.githubusercontent.com/u/67108090?v=4';
+
+      data.bio = 'I do programming because I like it and because I\'ve gotten pretty good in it.\n\n\
+      I also do some other hobbies like fpv drones, speedcubing, lockpicking and more!\n\n\
+      I haven\'t had a real job experience just yet, but I am happy to change that, so feel free to contact me!';
 
       setProfile({
         avatar: data.avatar_url,
@@ -239,31 +246,31 @@ const GitProfile = ({ config }: { config: Config }) => {
               </div>
               <div className="lg:col-span-2 col-span-1">
                 <div className="grid grid-cols-1 gap-6">
-                  {sanitizedConfig.projects.github.display && (
-                    <GithubProjectCard
-                      header={sanitizedConfig.projects.github.header}
-                      limit={sanitizedConfig.projects.github.automatic.limit}
-                      githubProjects={githubProjects}
-                      loading={loading}
-                      googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
-                    />
-                  )}
-                  {sanitizedConfig.publications.length !== 0 && (
-                    <PublicationCard
-                      loading={loading}
-                      publications={sanitizedConfig.publications}
-                    />
-                  )}
-                  {sanitizedConfig.projects.external.projects.length !== 0 && (
-                    <ExternalProjectCard
+                    {sanitizedConfig.projects.external.projects.length !== 0 && (
+                      <ExternalProjectCard
                       loading={loading}
                       header={sanitizedConfig.projects.external.header}
                       externalProjects={
                         sanitizedConfig.projects.external.projects
                       }
                       googleAnalyticId={sanitizedConfig.googleAnalytics.id}
-                    />
-                  )}
+                      />
+                    )}
+                    {sanitizedConfig.projects.github.display && (
+                      <GithubProjectCard
+                        header={sanitizedConfig.projects.github.header}
+                        limit={sanitizedConfig.projects.github.automatic.limit}
+                        githubProjects={githubProjects}
+                        loading={loading}
+                        googleAnalyticsId={sanitizedConfig.googleAnalytics.id}
+                      />
+                    )}
+                    {sanitizedConfig.publications.length !== 0 && (
+                      <PublicationCard
+                        loading={loading}
+                        publications={sanitizedConfig.publications}
+                      />
+                    )}
                   {sanitizedConfig.blog.display && (
                     <BlogCard
                       loading={loading}

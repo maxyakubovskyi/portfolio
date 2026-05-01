@@ -125,7 +125,7 @@ const CONFIG = {
     },
     {
       institution: '11th grade',
-      degree: 'Kharkiv Lzceum №155 of Kharkiv City Council (Kharkiv)',
+      degree: 'Kharkiv Lyceum № 155 of the Kharkiv City Council (Kharkiv)',
       from: '2015',
       to: 'now',
     },

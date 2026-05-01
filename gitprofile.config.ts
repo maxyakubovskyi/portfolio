@@ -51,7 +51,7 @@ const CONFIG = {
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { title: 'Portfolio of Max Yakubovskyi', description: '', imageURL: '' },
   social: {
     linkedin: 'мах-yakubovskiy-128769407',
     x: '',

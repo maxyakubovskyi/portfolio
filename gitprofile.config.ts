@@ -88,6 +88,7 @@ const CONFIG = {
     'Git',
     'Node.js',
     'Rust',
+    'Java',
     'MySQL',
     'PHP',
     '...and more!'
@@ -98,7 +99,7 @@ const CONFIG = {
       position: 'Intership',
       from: 'April 2026',
       to: 'one week',
-      companyLink: 'https://www.visus.uni-stuttgart.de/en/',
+      companyLink: 'https://www.visual-computing.org/2026/04/24/unser-informatik-bogy-am-visus-2026/',
     },
 //    {
 //      company: 'Company Name',
